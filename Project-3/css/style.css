@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.title {
+    font-family: "Montserrat", serif;
+    text-align: center;
+    color: #23272b;
+    padding-top: 20px;
+}
+.title h2 {
+    font-size: 12px;
+    margin: 11px;
+}
+.title h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.services {
+    margin-top: 40px;
+}
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+.services .container .card {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #23272b;
+}
+.services .container .card i {
+    transition: 0.7s;
+    font-size: 100px;
+}
+.services .container .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", serif;
+}
+.services .container .card p {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 240px;
+}
+.services .container .card i:hover {
+    color: #293541af;
+}
+.projects {
+    margin-top: 80px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    font-family: "Montserrat", serif;
+}
+.projects .offer {
+    background-color: #23272b;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.projects .offer h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+    
+}
+.projects .offer p {
+    font-size: 40px;
+    font-weight: 600;
+}
+.projects .offer .btn {
+    padding: 15px 20px;
+    background-color: #B33951;
+    color: #ffffff;
+    border-radius: 24px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.projects .offer .btn:hover {
+    transform: translateY(-6px);
+}
+.projects .card {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.projects .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6e343f;
+    opacity: 0;
+    transition: 0.5s;
+}
+.projects .card * {
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+    font-weight: 600;
+}
+.projects .card:hover *{
+    opacity: 1;
+   
+}
+.projects .card h2 {
+    color: #ffffff;
+    font-size: 28px;
+}
+.projects .card p {
+    font-size: 17px;
+    color:#23272b;
+}
+.projects .card .btn {
+    background-color: #ffffff;
+    color: #23272b;
+    padding:10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.projects .card .btn:hover {
+    transform: translateY(-6px);
+}
+.projects .card:hover::before {
+    opacity: 0.6;
+} 
+.img-1 {
+    background-image: url(../images/sofa.jpg);
+}
+.img-2 {
+    background-image: url(../images/chair.jpg);
+}
+.img-3 {
+    background-image: url(../images/loft.jpg);
+}
+.img-4 {
+    background-image: url(../images/modern.jpg);
+}
+.img-5 {
+    background-image: url(../images/office.jpg);
+}
